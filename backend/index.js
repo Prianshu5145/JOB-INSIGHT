@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://job-insight-six.vercel.app/',
+    origin:'https://job-insight-six.vercel.app',
     credentials:true
 }
 
