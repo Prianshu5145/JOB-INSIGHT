@@ -9,7 +9,7 @@ const useGetAllCompanies = () => {
     useEffect(()=>{
         const fetchCompanies = async () => {
             try {
-                const res = await axios.get(`http://localhost:3000/api/v1/company/get`,{withCredentials:true});
+                const res = await axios.get(`https://job-insight.onrender.com/api/v1/company/get`,{withCredentials:true});
                 console.log('called');
                 if(res.data.success){
                     dispatch(setCompanies(res.data.companies));
